@@ -15,7 +15,7 @@ $password = 'your_database_password';
 $pg_dump_route = 'location_of_pg_dum';
 
 # Create a new Object.
-$dump = new ConvertToSQLite($host, $port, $database, $user, $password);
+$dump = new ExportToSQLite($host, $port, $database, $user, $password);
 
 #Tell the class de pg_dump route.
 $dump->SetAppLocation($pg_dump_route);
