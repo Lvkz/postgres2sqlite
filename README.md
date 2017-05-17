@@ -30,6 +30,6 @@ $dump->ProcessConversion();
 ## Data Usage
 When you run the code above you will get a message like this: 
 ```html
-Conversion ended successfully. You may want to look into <a href="#">db.sqlite3</a> to find your data.
+Conversion ended successfully. You may want to look into db.sqlite3 to find your data.
 ```
 And you just have to click the url to access to the dumped file curated for insertion in SQLite.
