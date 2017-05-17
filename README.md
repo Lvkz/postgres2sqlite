@@ -1,7 +1,7 @@
 # postgres2sqlite
 A PHP Class to export data from PostgreSQL environment and prepare a INSERT file to SQLite database.
 
-##Code Usage
+## Code Usage
 ```php
 import 'ExportToSQLite.php'
 
@@ -27,5 +27,9 @@ $dump->SetDumpLocation('php_dump.sql');
 $dump->ProcessConversion();
 ```
 
-##Data Usage
-When you run the code above you will get a message like this: `Conversion ended successfully. You may want to look into db.sqlite3 to find your data.`
+## Data Usage
+When you run the code above you will get a message like this: 
+```html
+Conversion ended successfully. You may want to look into _db.sqlite3_ to find your data.
+```
+And you just have to click the url to access to the dumped file curated for insertion in SQLite.
