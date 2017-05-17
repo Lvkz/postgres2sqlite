@@ -1,5 +1,5 @@
 <?php
-class ConvertToSQLite {
+class ExportToSQLite {
 	private $pg_dump;
  	private $pg_host;
  	private $pg_port;
