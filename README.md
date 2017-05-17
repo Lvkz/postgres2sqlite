@@ -32,4 +32,4 @@ When you run the code above you will get a message like this:
 ```html
 Conversion ended successfully. You may want to look into db.sqlite3 to find your data.
 ```
-And you just have to click the url to access to the dumped file curated for insertion in SQLite.
+And you just have to click the url to access to the dumped file curated for SQLite insertion.
