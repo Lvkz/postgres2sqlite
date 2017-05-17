@@ -3,6 +3,7 @@ A PHP Class to export data from PostgreSQL environment and prepare a INSERT file
 
 ## Code Usage
 ```php
+<?php 
 include_once 'ExportToSQLite.php'
 
 $host = 'your_host_address';
@@ -26,6 +27,7 @@ $dump->SetDumpLocation('php_dump.sql');
 
 #Execute conversion.
 $dump->ProcessConversion();
+?>
 ```
 
 ## Data Usage
