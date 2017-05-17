@@ -132,7 +132,7 @@ class ExportToSQLite {
 		if(!$this->generateSQLiteFile()) { $this->printErrorMessage('generateSQLiteFile'); die(); }
 		
 		echo 'Conversion ended successfully. ';
-		echo 'You may want to look into <a href="db.sqlite3" target="_blank">db.sqlite3</a> to find your data.';
+		echo 'You may want to look into <a href="db.sqlite3" target="_blank">' . $this->exportFileName . '</a> to find your data.';
 	}
 }
 ?>
