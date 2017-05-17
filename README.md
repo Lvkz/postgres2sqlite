@@ -1,16 +1,29 @@
 # postgres2sqlite
 A PHP Class to export data from PostgreSQL environment and prepare a INSERT file to SQLite database.
 
-#Usage
-import 
+##Code Usage
+```import 'ExportToSQLite.php'
 
-$host = '128.1.10.6';
-$port = '5432';
-$database = 'nasplazasdominicanas';
-$user = 'nasplazasdominicanas';
-$password = 'nasplazasdominicanas.2017##';
+$host = 'your_host_address';
+$port = 'your_port';
+$database = 'your_database_name';
+$user = 'your_database_username';
+$password = 'your_database_password';
 
+//I'm using a Postgres App for Mac so for me is at: /Applications/Postgres.app/Contents/Versions/9.6/bin/pg_dump
+$pg_dump_route = 'location_of_pg_dum';
+
+# Create a new Object.
 $dump = new ConvertToSQLite($host, $port, $database, $user, $password);
-$dump->SetAppLocation('/Applications/Postgres.app/Contents/Versions/9.6/bin/pg_dump');
+
+#Tell the class de pg_dump route.
+$dump->SetAppLocation($pg_dump_route);
+
+#The name of the postgres dump - in case you want to use it for something else.
 $dump->SetDumpLocation('php_dump.sql');
-$dump->ProcessConversion();
+
+#Execute conversion.
+$dump->ProcessConversion();```
+
+##Data Usage
+When you run the code above you will get a message like this: ```Conversion ended successfully. You may want to look into db.sqlite3 to find your data.```
