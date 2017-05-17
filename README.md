@@ -11,7 +11,8 @@ $database = 'your_database_name';
 $user = 'your_database_username';
 $password = 'your_database_password';
 
-//I'm using a Postgres App for Mac so for me is at: /Applications/Postgres.app/Contents/Versions/9.6/bin/pg_dump
+//I'm using a Postgres App for Mac so for me is at: 
+//Applications/Postgres.app/Contents/Versions/9.6/bin/pg_dump
 $pg_dump_route = 'location_of_pg_dum';
 
 # Create a new Object.
