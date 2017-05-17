@@ -8,6 +8,7 @@ class ExportToSQLite {
  	private $pg_password;
  	private $dump_location;
  	private $sqliteFileContent = array();
+	private $exportFileName;
 	
 	public function __construct($host=false, $port=false, $database=false, $user=false, $password=false) {
   		if (($host != false) && ($port != false) && ($database != false) && ($user != false) && ($password != false)) {
@@ -78,7 +79,7 @@ class ExportToSQLite {
 	
 	private function generateSQLiteFile() {
 		#Creating File
-  		$my_file = 'db.sqlite3';
+  		$my_file = $this->exportFileName;
   		$handle = fopen($my_file, 'w') or die('Cannot open file:  ' . $my_file);
   		fclose($handle);
 
@@ -119,6 +120,10 @@ class ExportToSQLite {
 	
 	public function SetDumpLocation($dump_location) {
 		$this->dump_location = $dump_location;
+	}
+	
+	public function SetExportFileName($exportFileName) {
+		$this->exportFileName = $exportFileName;
 	}
 	
 	public function ProcessConversion() {
