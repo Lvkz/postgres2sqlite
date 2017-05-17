@@ -3,7 +3,7 @@ A PHP Class to export data from PostgreSQL environment and prepare a INSERT file
 
 ## Code Usage
 ```php
-import 'ExportToSQLite.php'
+include_once 'ExportToSQLite.php'
 
 $host = 'your_host_address';
 $port = 'your_port';
@@ -13,7 +13,7 @@ $password = 'your_database_password';
 
 # I'm using a Postgres App for Mac so for me is at: 
 # /Applications/Postgres.app/Contents/Versions/9.6/bin/pg_dump
-$pg_dump_route = 'location_of_pg_dum';
+$pg_dump_route = 'location_of_pg_dump';
 
 # Create a new Object.
 $dump = new ExportToSQLite($host, $port, $database, $user, $password);
